@@ -303,57 +303,7 @@
 </script>
 
 
-//doenlaod button script
-  <script>
-  //this script add feedback button download 
-  // Make sure Firebase is initialized here (firebase.initializeApp & firestore already set up)
 
-  function exportFirestoreToCSV() {
-    const db = firebase.firestore();
-
-    db.collection("feedback").get().then((querySnapshot) => {
-      const csvRows = [];
-
-      // Add headers
-      csvRows.push("Name,Mobile,Feedback,Email,Timestamp");
-
-      // Add data
-      querySnapshot.forEach((doc) => {
-        const data = doc.data();
-        const row = [
-          `"${data.name || ''}"`,
-          `"${data.mobile || ''}"`,
-          `"${data.feedback || ''}"`,
-          `"${data.email || ''}"`,
-          `"${data.timestamp?.toDate ? data.timestamp.toDate().toISOString() : ''}"`
-        ];
-        csvRows.push(row.join(","));
-      });
-
-      // Convert to CSV and trigger download
-      const csvString = csvRows.join("\n");
-      const blob = new Blob([csvString], { type: "text/csv" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "feedback_data.csv";
-      a.click();
-    })
-    .catch(error => {
-      console.error("Error exporting data:", error);
-      alert("Failed to export CSV. Check the console for errors.");
-    });
-  }
-
-  // Optional: add a button to trigger download
-  document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.createElement("button");
-    btn.textContent = "Download Feedback CSV";
-    btn.onclick = exportFirestoreToCSV;
-    btn.style = "position:fixed;bottom:20px;right:20px;padding:10px;background:#007bff;color:white;border:none;border-radius:5px;";
-    document.body.appendChild(btn);
-  }); //end here
-</script>
 
 <script>
   document.querySelectorAll('.flip-card').forEach(card => {
