@@ -1,0 +1,149 @@
+
+.services-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 40px;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.service-card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 300px;
+    width: 100%;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #dddfea;
+}
+.services-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 40px;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.service-card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 300px;
+    width: 100%;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(191, 180, 134, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #eeece5;
+}
+.materials-section {
+    position: relative;
+    text-align: center;
+    color: white; /* Text color to make it visible on dark background */
+    width: 100%;
+    padding: 40px;
+    background: linear-gradient(to right, #cedae7, #b2cde9); /* Dark background similar to services */
+}
+
+.materials-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Title color to match the service card */
+    text-shadow: 1px 1px 3px #000;
+}
+
+.materials-intro {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #4c94cf; /* Light color text for readability */
+}
+
+.materials-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.materials-list li {
+    background: linear-gradient(to right, #cedae7, #89b7e8); /* Same dark background */
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 300px;
+    width: 100%;
+    color: #122a40;
+    text-transform: capitalize;
+    box-shadow: 0 0 10px rgba(92, 145, 232, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.materials-list li:hover {
+    transform: scale(1.05);
+}
+
+.materials-list li h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #141e2c;
+}
+/*device responsive*/
+/* Existing styles remain unchanged up to this point */
+
+
+
